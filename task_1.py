@@ -13,7 +13,7 @@ def calc():
                 total += minutes
             elif 's' in sub:
                 seconds = int(sub.replace('s',''))
-                total += seconds
+                total += seconds // 60
     return total
 
 print(calc())
